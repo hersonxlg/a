@@ -1,11 +1,9 @@
-#include <stdio.h>
+#include "io.c"
 
 int main(int argc, char *argv[])
 {
-    if (argc==2) {
-        printf("%s\n",argv[1]);
-    }else{
-        printf("ERROR..\nNumero de parametros incorrectos.\n");
-    }
+    printf("Ingresa tu nombre:\n");
+    char * nombre = getString();
+    printf("\n\nEl nombre ingresado es: \"%s\"\n\n",nombre);
     return 0;
 }
